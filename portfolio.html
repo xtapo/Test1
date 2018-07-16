@@ -7,8 +7,8 @@ title: Prorfolio
 				<div class="row no-gutter">
 					{% for item in site.portfolio %}
 					<div class="col-lg-4 col-sm-6">
-						<a href="{{ portfolio_item.link }}" class="portfolio-box">
-							<img src="{{ portfolio_item.img_path }}" class="img-responsive" alt="">
+						<a href="{{ item.link }}" class="portfolio-box">
+							<img src="{{ item.img_path }}" class="img-responsive" alt="{{ item.project_name }}">
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-caption-content">
 									<div class="project-category text-faded">
