@@ -8,7 +8,7 @@ title: Portfolio
 					{% for item in site.portfolio %}
 					<div class="col-lg-4 col-sm-6">
 						<a href="{{ item.link }}" class="portfolio-box">
-							<img src="{{ item.image_path }}" class="img-responsive" alt="{{ item.project_name }}">
+							<img src="//images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ item.image_path }}&w=300&h=30" class="img-responsive" alt="{{ item.project_name }}">
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-caption-content">
 									<div class="project-category text-faded">
