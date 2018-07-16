@@ -1,5 +1,5 @@
 ---
-image_path: /img/prorfolio/2.jpg
+image_path: /img/portfolio/2.jpg
 category: Branding
 project_name: Apple
 link: https://apple.com
