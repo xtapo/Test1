@@ -5,7 +5,7 @@ title: Portfolio
 		<section class="no-padding" id="portfolio">
 			<div class="container-fluid">
 				<div class="row no-gutter">
-					{% for item in paginator.portfolio %}
+					{% for item in site.portfolio %}
 					<div class="col-lg-4 col-sm-6">
 						<a href="{{ item.link }}" class="portfolio-box">
 							<img src="//images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ item.image_path }}&w=429&h=231&t=square" class="img-responsive" alt="{{ item.project_name }}">
@@ -22,7 +22,6 @@ title: Portfolio
 						</a>
 					</div>
 					{% endfor %}
-					{% include paginator.html %}
 				</div>
 			</div>
 		</section>
